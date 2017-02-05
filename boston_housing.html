@@ -14598,7 +14598,7 @@ bGXqwK8Ieh0AAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>When the model is trained with a maximum depth of 1 (less complex), the model is likely to suffer more from high variance as both its training score and validation score are quite low compared to other depths (meaning that the model does not explain the variance of data that well). When the model is trained with a maximum depth of 10 (more complex), it is more likely to suffer from high bias as the difference between the training and validation score is quite large -- meaning that the model is likely to be suffering from 'overfitting', where the training score continues to improve while the validation score suffers.</p>
+<p>When the model is trained with a maximum depth of 1 (less complex), the model is likely to suffer more from high bias as both its training score and validation score are quite low, since the model isn't complex enough to learn the data. When the model is trained with a maximum depth of 10 (more complex), it is more likely to suffer from high variance as the difference between the training and validation score is quite large -- meaning that the model is likely to be suffering from 'overfitting', where the training score continues to improve by learning random noise in the data, while the validation score suffers due to the model losing its capacity to generalise previously unseen data.</p>
 
 </div>
 </div>
@@ -14651,7 +14651,7 @@ bGXqwK8Ieh0AAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>The grid search technique is a type of hyperparameter optimisation. It optimizes a learning algorithm by providing the best possible combination of parameters for the model, where the paramters can be the type of kernel (denoted by gamma) or the soft margin cost function (denoted by C). Each combination of parameters is used to train a support vector machine which is then evaluated through cross-validation. It is a way of working through different combinations of parameter tunes by cross-validating to determine which tune performs the best.</p>
+<p>The grid search technique is a way of working through different combinations of parameter tunes by cross-validating to determine which tune performs the best. It optimizes a learning algorithm by providing the best possible combination of parameters for the model, doing so by building and evaluating a model for each combination of algorithm parameters specified in a grid.</p>
 
 </div>
 </div>
