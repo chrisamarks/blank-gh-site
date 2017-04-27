@@ -1,13 +1,19 @@
-body{
+body {
   font-family: Garamond, Georgia, serif;
   background-color: #fffff8;
   color: #00008B
 }
-a{
+
+a {
   color: rgb(42,174,245);
   text-decoration: none;
 }
 
+.fullpage {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
 /* Dad's CSS 
 [fragmention] { background-color: gold; outline: 0.375em solid gold; }
 body {
